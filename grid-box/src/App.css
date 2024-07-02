@@ -1,0 +1,38 @@
+.box {
+  height: 80px;
+  width: 80px;
+  transition: background 0.5s ease-out;
+}
+.boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  width: fit-content;
+  padding: 4rem;
+  margin: 0 auto;
+}
+
+.box.visible {
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.box.hide {
+  cursor: initial;
+  opacity: 0;
+}
+
+.selected {
+  background: green;
+}
+
+.disable-click {
+  cursor: not-allowed;
+}
+
+.App-header {
+  text-align: center;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
